@@ -2,6 +2,8 @@ plan:
     module: .dagger/env/s3/plan
 name: s3
 inputs:
+    beta.site.account.token:
+        secret: ENC[AES256_GCM,data:50V+MnGDvTkZyXr5KJIDmJkkL9foNZ6N8fKNbsvGvTA3W2pUX7QSFuOSbA==,iv:0oQm4GaU0pr091EFkeHmyZyBTZe3yEsSmhHppzLRsVQ=,tag:Skbn6xlPvRESiuyIMl0Zqg==,type:str]
     s3bucket.config.accessKey:
         secret: ENC[AES256_GCM,data:EBkuQ/CSBuo1lax6gyLudMJBdnU=,iv:jMJtNGZUcaH6vK6kqq37MMt7fonnoJ1Rn9eI0FN2cXI=,tag:1ZaDPBTGviy3t3p2glqExQ==,type:str]
     s3bucket.config.region:
@@ -26,8 +28,8 @@ sops:
             aEQ0U1l2dkp6dDhud3FrdUNMaTRFTEkKTaxaUs8tUz9peEYtHDrL/jOpf/q+iljI
             Yb53Sh4hJxjv378a9YYywIbdg6r4SSso1YPMk6mQsevRwC3PJS+H1g==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-06-21T09:34:45Z"
-    mac: ENC[AES256_GCM,data:U61+9e2h6zft6Q1ulM0ybRldzM1r5A5S0ugPAbF0DJyPgBxbENKdZfjtKu8Lufi2q4jgtam0YsFFpCqDBbKS6IlTspzo4cv23pfj2LeGbMub8ZiXxPZX3DcPI+jp0y2DySG+noYaIevcGJDcBEs6UUvZbLhjRzUCLzpECcxIsHI=,iv:3AzHRt110DlIYkk5PIUHDP2PnnNZGDBD7by9zQl0v3c=,tag:bDhEVawpjQWwiFmnxiCxsg==,type:str]
+    lastmodified: "2021-07-07T11:17:14Z"
+    mac: ENC[AES256_GCM,data:ZF59nSW0PSe4hW17McLwWaw4knids5wghPhtXBkczN5xTZ8N3WV5Z3vojGy9F33QDl9c0H12RytZtIpn0YvGLGNU+AQbI5pQi19Uf2ixAp06YCPamadbwbYUNIPDQsBAkygK8yL4NIn+Gwbki6F4FHVMeB3u7VMty3Oh48Pyt+o=,iv:SzH/nwRIJE/1OswM7Be759qz6gXGxBlDqI4lwHO0aBg=,tag:kwdvz2c5FgWByTeTQ6ea9g==,type:str]
     pgp: []
     encrypted_suffix: secret
     version: 3.7.1

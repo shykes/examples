@@ -4,6 +4,7 @@ import (
 	"alpha.dagger.io/dagger"
 	"alpha.dagger.io/aws/s3"
 	"alpha.dagger.io/js/yarn"
+	"alpha.dagger.io/netlify"
 )
 
 // Source code of the sample application
@@ -25,3 +26,10 @@ s3bucket: s3.#Object & {
 
 // Deploy URL
 url: "https://\(bucketName)/\(appName)/" @dagger(output)
+
+beta: {
+	site: netlify.#Site & {
+		contents: app.build
+		name: "dagger-demo-\(appName)"
+	}
+}
